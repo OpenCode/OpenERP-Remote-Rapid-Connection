@@ -42,8 +42,8 @@ def main(openerp_gtk_client_path):
 			if len(customers.split('\t')) > 2:
 				customer_port = customers.split('\t')[2]
 	print 'Setting remote IP to', customer_ip.replace('\n', ''), '...'
-	print 'Setting remote PORT to', customer_port, '...'
-	return customer_ip.replace('\n', ''), customer_port
+	print 'Setting remote PORT to', customer_port.replace('\n', ''), '...'
+	return customer_ip.replace('\n', ''), customer_port.replace('\n', '')
 
 
 if __name__ == '__main__':
