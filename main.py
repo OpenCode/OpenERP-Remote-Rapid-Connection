@@ -18,9 +18,7 @@ import sys
 
 def main(openerp_gtk_client_path):
 	# ----- Escape if config file with client list doesn't exist
-	#customer_list_path = '%s/config/customer.list' % (os.path.dirname(sys.argv[0]))
-	customer_list_path = './config/customer.list'
-	#print customer_list_path
+	customer_list_path = '%s/config/customer.list' % (os.path.dirname(sys.argv[0]))
 	if not os.path.exists(customer_list_path):
 		print 'Create config.list file in this folder!'
 		return False
