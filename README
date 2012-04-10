@@ -1,0 +1,9 @@
+OpenERP Remote Rapid Connection is a software created for all the developers that manage a lot of connection with customers server.
+
+To use the program you simply run it with a parameter that indicates the path of your client GTK.
+Example:
+
+OpenERP-Remote-Rapid-Connection/main.py /home/user/openerp/client/bin/openerp-client.py
+
+In the "config" you can find the file "customer.list". Edit this file if you want to set parameters for the server to which you connect. 
+Create a new line for each server and separates the data with a tab character (\t). Each line must include the customer name (first parameter) and the ip for the connection (second parameter). The figure on the port (third parameter) is optional and the default is set to 8070.
